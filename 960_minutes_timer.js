@@ -9,10 +9,10 @@ function clock()
     // 秒
     var ms = ( now.getSeconds() * 1000 ) + now.getMilliseconds();
 
-    if( h > 8 ){
+    if( h >= 8 ){
         var totalMins = ('000' + (1440 - (h * 60 + mi))).slice( -3 );
 	var preText = "Time left today";
-	var bodyText = "平均的な人の1日の活動時間は、16時間前後。<br>一見長くも見える時間ですが、分に直すと960分です。なんだか急に短いように感じられませんか？<br>過行く時を肌に感じ、今日残された時間をより良く過ごしましょう。<br>";
+	var bodyText = "平均的な人の1日の活動時間は、16時間前後。分に直すと960分です。<br>過行く時を肌に感じ、今日残された時間をより良く過ごしましょう。<br>";
         var color00 = "#EEEEEE";
         var color01 = "#000000";
         var color02 = "#BBBBBB";
